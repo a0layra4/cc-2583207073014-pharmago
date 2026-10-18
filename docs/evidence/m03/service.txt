@@ -1,0 +1,21 @@
+● cc-m03.service - PTI 2802 M03 Flask Application
+     Loaded: loaded (/etc/systemd/system/cc-m03.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2026-10-18 22:44:52 WIB; 15min ago
+   Main PID: 736 (gunicorn)
+      Tasks: 3 (limit: 532)
+     Memory: 34.2M (peak: 34.7M)
+        CPU: 566ms
+     CGroup: /system.slice/cc-m03.service
+             ├─736 /srv/cc-m03/.venv/bin/python /srv/cc-m03/.venv/bin/gunicorn --workers 1 --threads 2 --bind 127.0.0.1:8000 --timeout 30 --access-logfile - --error-logfile - app:app
+             └─930 /srv/cc-m03/.venv/bin/python /srv/cc-m03/.venv/bin/gunicorn --workers 1 --threads 2 --bind 127.0.0.1:8000 --timeout 30 --access-logfile - --error-logfile - app:app
+
+Oct 18 22:44:53 cc-m03-2583207073014 gunicorn[736]: [2026-10-18 22:44:53 +0700] [736] [INFO] Starting gunicorn 26.2.0
+Oct 18 22:44:53 cc-m03-2583207073014 gunicorn[736]: [2026-10-18 22:44:53 +0700] [736] [INFO] Listening at: http://127.0.0.1:8000 (736)
+Oct 18 22:44:53 cc-m03-2583207073014 gunicorn[736]: [2026-10-18 22:44:53 +0700] [736] [INFO] Using worker: gthread
+Oct 18 22:44:54 cc-m03-2583207073014 gunicorn[930]: [2026-10-18 22:44:53 +0700] [930] [INFO] Booting worker with pid: 930
+Oct 18 22:44:54 cc-m03-2583207073014 gunicorn[736]: [2026-10-18 22:44:54 +0700] [736] [ERROR] Control server error: [Errno 13] Permission denied: '/home/cloudstudent'
+Oct 18 22:45:32 cc-m03-2583207073014 gunicorn[930]: 127.0.0.1 - - [18/Oct/2026:22:45:32 +0700] "GET /health HTTP/1.1" 200 91 "-" "curl/8.5.0"
+Oct 18 22:48:15 cc-m03-2583207073014 gunicorn[930]: 127.0.0.1 - - [18/Oct/2026:22:48:15 +0700] "GET / HTTP/1.1" 200 768 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:71.0) Gecko/20100101 Firefox/71.0"
+Oct 18 22:56:19 cc-m03-2583207073014 gunicorn[930]: 127.0.0.1 - - [18/Oct/2026:22:56:19 +0700] "GET / HTTP/1.1" 200 768 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46"
+Oct 18 22:58:47 cc-m03-2583207073014 gunicorn[930]: 127.0.0.1 - - [18/Oct/2026:22:58:47 +0700] "GET /health HTTP/1.1" 200 91 "-" "curl/8.5.0"
+Oct 18 22:59:41 cc-m03-2583207073014 gunicorn[930]: 127.0.0.1 - - [18/Oct/2026:22:59:41 +0700] "GET /health HTTP/1.1" 200 91 "-" "curl/8.5.0"
