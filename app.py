@@ -1,36 +1,14 @@
-from datetime import datetime, timezone
-import os
-import socket
-
 from flask import Flask, jsonify, render_template
 
 app = Flask(__name__)
 
+@app.route("/")
+def home():
+    return render_template("index.html")
 
-@app.get("/")
-def index():
-    return render_template(
-        "index.html",
-        app_env=os.getenv("APP_ENV", "development"),
-        hostname=socket.gethostname(),
-    )
-
-
-@app.get("/health")
+@app.route("/health")
 def health():
-    return jsonify(
-        status="ok",
-        environment=os.getenv("APP_ENV", "development"),
-        timestamp=datetime.now(timezone.utc).isoformat(),
-    )
+    return jsonify({"status": "ok", "service": "pharmago-m03"}), 200
 
-
-@app.get("/api/info")
-def info():
-    return jsonify(
-        course="Cloud Computing",
-        code="PTI 2802",
-        meeting=3,
-        milestone="M03",
-        deployment="VPS Ubuntu Server 24.04",
-    )
+if __name__ == "__main__":
+    app.run(host="127.0.0.1", port=8000)
