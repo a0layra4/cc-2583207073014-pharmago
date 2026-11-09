@@ -4,7 +4,7 @@
 Accepted
 
 ## Context
-VPS Ubuntu Server 24.04 (Azure) dengan RAM sekitar 1 GB. Proyek Sipusipi membutuhkan deployment yang ringan, aman, dan mudah dikembangkan.
+VPS Ubuntu Server 24.04 (Azure) dengan RAM sekitar 1 GB. Proyek PharmaGo membutuhkan deployment yang ringan, aman, dan mudah dikembangkan.
 
 ## Decision
 - Flask sebagai aplikasi web
