@@ -1,25 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Cloud Computing PTI 2802 First Deployment">
-  <title>Sipusipi — M03</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaGo - Delivery Obat Online</title>
 </head>
 <body>
-  <main class="shell">
-    <span class="badge">PTI 2802 · M03</span>
-    <h1>Sipusipi</h1>
-    <p class="lead">Sistem pencatatan peminjaman buku perpustakaan. First VPS Deployment.</p>
-    <dl>
-      <div><dt>Environment</dt><dd>{{ app_env }}</dd></div>
-      <div><dt>Host</dt><dd>{{ hostname }}</dd></div>
-    </dl>
-    <nav>
-      <a href="/health">Health Endpoint</a>
-      <a href="/api/info">API Info</a>
-    </nav>
-  </main>
+    <h1>PharmaGo — Layanan Delivery Obat</h1>
+    <p>Pesan obat dari apotek terdekat, unggah resep dokter, dan dapatkan rekomendasi sesuai keluhan.</p>
+    <p>Status sistem: <a href="/health">/health</a></p>
 </body>
 </html>
