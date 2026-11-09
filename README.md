@@ -1,4 +1,4 @@
-# Sipusipi
+# PharmaGo
 
 Cloud Computing — PTI 2802
 Pertemuan 3 — Project Inception
@@ -7,11 +7,11 @@ Pertemuan 3 — Project Inception
 Seyra Salma A Mutia Rani / 2583207073014
 
 ## Problem
-Petugas perpustakaan membutuhkan cara untuk mencatat dan memantau peminjaman buku secara terpusat. Sistem menyediakan pencatatan buku, anggota, peminjaman, dan status pengembalian sehingga buku yang sedang dipinjam dan keterlambatan dapat ditelusuri.
+Masyarakat sering kesulitan mengetahui ketersediaan obat di apotek terdekat, harus mengantre untuk menebus resep dokter, serta bingung memilih obat yang sesuai dengan keluhan ringan. Sistem menyediakan layanan pemesanan dan pengantaran obat online dari apotek terdekat, fitur unggah resep dokter, serta rekomendasi obat berdasarkan keluhan pengguna.
 
 ## Target Users
-- Petugas perpustakaan
-- Anggota perpustakaan
+- Pembeli / Pasien
+- Admin Apotek
 
 ## Features M03
 - baseline application
