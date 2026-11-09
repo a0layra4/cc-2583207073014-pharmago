@@ -1,21 +1,22 @@
 # Requirements
 
 ## Problem Statement
-Petugas perpustakaan membutuhkan cara untuk mencatat dan memantau peminjaman buku secara terpusat. Sistem menyediakan pencatatan buku, anggota, peminjaman, dan status pengembalian sehingga buku yang sedang dipinjam dan keterlambatan dapat ditelusuri.
+Masyarakat sering kesulitan mengetahui ketersediaan obat di apotek terdekat, harus mengantre untuk menebus resep dokter, serta bingung memilih obat yang sesuai dengan keluhan ringan. Sistem menyediakan layanan pemesanan dan pengantaran obat online dari apotek terdekat, fitur unggah/input resep dokter, serta rekomendasi obat berdasarkan keluhan pengguna.
 
 ## Target Users
-- Petugas perpustakaan
-- Anggota perpustakaan
+- Pembeli / Pasien
+- Admin Apotek
 
 ## User Needs
-- Sebagai petugas perpustakaan, saya ingin melihat buku yang belum dikembalikan, sehingga saya dapat menindaklanjuti keterlambatan.
-- Sebagai anggota perpustakaan, saya ingin mengetahui ketersediaan sebuah buku, sehingga saya tidak datang sia-sia.
+- Sebagai pembeli, saya ingin memesan obat dari apotek terdekat atau memilih apotek tertentu, sehingga obat dapat diantar langsung ke rumah tanpa harus mengantre.
+- Sebagai pembeli, saya ingin memasukkan resep dokter dan mendapatkan rekomendasi obat sesuai keluhan, sehingga saya dapat membeli obat yang tepat dengan mudah.
+- Sebagai admin apotek, saya ingin memantau pesanan masuk dan daftar resep yang dikirim pembeli, sehingga proses penyiapan dan pengiriman obat lebih terorganisir.
 
 ## Functional Requirements
 - FR-01 Sistem menampilkan halaman utama.
 - FR-02 Sistem menyediakan health endpoint.
 - FR-03 Sistem menampilkan metadata aplikasi.
-- FR-04 Sistem menampilkan daftar objek utama proyek.
+- FR-04 Sistem menampilkan daftar objek utama proyek (apotek, obat, resep, pesanan).
 
 ## Non-Functional Requirements
 - NFR-01 Backend hanya listen pada loopback.
